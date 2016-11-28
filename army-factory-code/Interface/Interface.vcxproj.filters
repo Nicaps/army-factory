@@ -57,12 +57,6 @@
     <ClCompile Include="SaveArmy.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="ModifArmy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Start.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddUnit.h">
@@ -110,12 +104,6 @@
     <ClInclude Include="SaveArmy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DeletedArmy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ModifArmy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HomePage.resx">
@@ -139,17 +127,5 @@
     <EmbeddedResource Include="ViewFigurine.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddUnit.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveArmy.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeletedArmy.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="libmysql.dll" />
   </ItemGroup>
 </Project>

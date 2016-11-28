@@ -91,8 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies />
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
@@ -104,8 +103,7 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -114,8 +112,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -124,8 +121,7 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -145,9 +141,7 @@
     <ClCompile Include="CreateArmy.cpp" />
     <ClCompile Include="DeletedArmy.cpp" />
     <ClCompile Include="HomePage.cpp" />
-    <ClCompile Include="ModifArmy.cpp" />
     <ClCompile Include="SaveArmy.cpp" />
-    <ClCompile Include="Start.cpp" />
     <ClCompile Include="ValidatedArmy.cpp" />
     <ClCompile Include="ViewArmy.cpp" />
     <ClCompile Include="ViewFigurine.cpp" />
@@ -175,12 +169,10 @@
     <ClInclude Include="CreateArmy.h">
       <FileType>CppControl</FileType>
     </ClInclude>
-    <ClInclude Include="DeletedArmy.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="HomePage.h">
       <FileType>CppControl</FileType>
     </ClInclude>
-    <ClInclude Include="ModifArmy.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SaveArmy.h">
       <FileType>CppForm</FileType>
@@ -208,7 +200,6 @@
     <EmbeddedResource Include="CreateArmy.resx">
       <DependentUpon>CreateArmy.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeletedArmy.resx" />
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.h</DependentUpon>
     </EmbeddedResource>
@@ -227,9 +218,6 @@
     <EmbeddedResource Include="WarHammer 40K Army Factory.resx">
       <DependentUpon>WarHammer 40K Army Factory.h</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="libmysql.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
