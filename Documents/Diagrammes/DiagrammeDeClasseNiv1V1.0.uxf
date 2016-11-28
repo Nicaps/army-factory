@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>136</x>
+      <y>24</y>
+      <w>184</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Diagramme de classe de niveau 1
+Date = 04/11/2016
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>0</y>
+      <w>144</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Army
+-
+-c_sName : string
+-c_iCost : int
+-c_listUnit : vector&lt;Unit*&gt;
+-c_iNbUnit : int
+-
++Army()
++addUnit(Unit*) : void
++delUnit(Unit*) : void
++getName() : string
++getCost() : int
++showUnits() : void
++getNbUnits() : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>216</y>
+      <w>152</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Unit
+-
+_-NEXT_VALID_ID : int_
+-c_iId : int
+-c_iCost : int
+-c_listFig : vector&lt;Figurine*&gt;
+-c_iNbFig : int
+-c_role : Role
+-
++Unit()
++addFigurine(Figurine*)
++delFigurine(Figurine*)
++getId() : int
++getCost() : int
++showFigurines() : void
++getNbFigurines() : int
++getRole() : Role</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>704</x>
+      <y>216</y>
+      <w>128</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Role
+-
+-c_sRoleName : string
+-
++getRoleName() : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>160</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>232</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>424</x>
+      <y>472</y>
+      <w>216</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>Figurine
+-
+_-NEXT_VALID_ID : int_
+-c_iId : int
+-c_sName : string
+-c_type : Type*
+-c_listEquipements : vector&lt;Equipement*&gt;
+-c_listRules : vector&lt;Rule*&gt;
+-
++Figurine()
++addEquipement(Equipement*) : void
++delEquipement(Equipement*) : void
++addRule(Rule*) : void
++delRule(Rule*) : void
++getId() : int
++getCost() : int
++getType() : Type
++showEquipements() : void
++showRules() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>416</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>168</x>
+      <y>552</y>
+      <w>128</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Equipement
+-
+_-NEXT_VALID_ID : int_
+-c_iId : int
+-c_sName : string
+-c_sText : string
+-
++Equipement()
++getId() : int
++getName() : string
++getText() : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>408</y>
+      <w>136</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Rule
+-
+_-NEXT_VALID_ID : int_
+-c_iId : int
+-c_sName : string
+-c_sText : string
+-
++Rule()
++getId() : int
++getName() : string
++getText() : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>488</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+&lt; has</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>592</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+&lt; carries</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>520</y>
+      <w>144</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Type
+-
+_-NEXT_VALID_ID : int_
+-c_iId : int
+-c_sName : string
+-
++getId() : int
++getName() : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>632</x>
+      <y>560</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+has &gt;</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
