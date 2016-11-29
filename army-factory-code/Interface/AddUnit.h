@@ -1,5 +1,6 @@
 #include "AddFigurine.h"
 #include "AddEquipment.h"
+#include "SaveUnit.h"
 
 namespace Interface {
 
@@ -47,6 +48,10 @@ namespace Interface {
 	private: System::Windows::Forms::TextBox^  TBNameUnit;
 	private: System::Windows::Forms::Button^  BtnAddFig;
 	private: System::Windows::Forms::Button^  BtnAddEquip;
+	private: System::Windows::Forms::Button^  BtnOk;
+	private: System::Windows::Forms::Label^  LabelEquipList;
+	private: System::Windows::Forms::ComboBox^  CBEquipList;
+
 	protected:
 
 	private:
@@ -74,6 +79,9 @@ namespace Interface {
 			this->TBNameUnit = (gcnew System::Windows::Forms::TextBox());
 			this->BtnAddFig = (gcnew System::Windows::Forms::Button());
 			this->BtnAddEquip = (gcnew System::Windows::Forms::Button());
+			this->BtnOk = (gcnew System::Windows::Forms::Button());
+			this->LabelEquipList = (gcnew System::Windows::Forms::Label());
+			this->CBEquipList = (gcnew System::Windows::Forms::ComboBox());
 			this->SuspendLayout();
 			// 
 			// LabelAddUnit
@@ -90,7 +98,7 @@ namespace Interface {
 			// 
 			this->LabelName->AutoSize = true;
 			this->LabelName->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->LabelName->Location = System::Drawing::Point(30, 150);
+			this->LabelName->Location = System::Drawing::Point(30, 180);
 			this->LabelName->Name = L"LabelName";
 			this->LabelName->Size = System::Drawing::Size(117, 20);
 			this->LabelName->TabIndex = 1;
@@ -100,7 +108,7 @@ namespace Interface {
 			// 
 			this->LabelRole->AutoSize = true;
 			this->LabelRole->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->LabelRole->Location = System::Drawing::Point(30, 190);
+			this->LabelRole->Location = System::Drawing::Point(30, 220);
 			this->LabelRole->Name = L"LabelRole";
 			this->LabelRole->Size = System::Drawing::Size(144, 20);
 			this->LabelRole->TabIndex = 2;
@@ -110,7 +118,7 @@ namespace Interface {
 			// 
 			this->LabelNumPoints->AutoSize = true;
 			this->LabelNumPoints->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->LabelNumPoints->Location = System::Drawing::Point(30, 230);
+			this->LabelNumPoints->Location = System::Drawing::Point(30, 260);
 			this->LabelNumPoints->Name = L"LabelNumPoints";
 			this->LabelNumPoints->Size = System::Drawing::Size(142, 20);
 			this->LabelNumPoints->TabIndex = 3;
@@ -120,7 +128,7 @@ namespace Interface {
 			// 
 			this->LabelLengthUnit->AutoSize = true;
 			this->LabelLengthUnit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->LabelLengthUnit->Location = System::Drawing::Point(30, 270);
+			this->LabelLengthUnit->Location = System::Drawing::Point(30, 300);
 			this->LabelLengthUnit->Name = L"LabelLengthUnit";
 			this->LabelLengthUnit->Size = System::Drawing::Size(120, 20);
 			this->LabelLengthUnit->TabIndex = 4;
@@ -130,7 +138,7 @@ namespace Interface {
 			// 
 			this->LabelModelUnit->AutoSize = true;
 			this->LabelModelUnit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->LabelModelUnit->Location = System::Drawing::Point(30, 110);
+			this->LabelModelUnit->Location = System::Drawing::Point(30, 140);
 			this->LabelModelUnit->Name = L"LabelModelUnit";
 			this->LabelModelUnit->Size = System::Drawing::Size(120, 20);
 			this->LabelModelUnit->TabIndex = 5;
@@ -141,7 +149,7 @@ namespace Interface {
 			this->CBModelUnit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11));
 			this->CBModelUnit->FormattingEnabled = true;
 			this->CBModelUnit->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Unité1", L"Unité2" });
-			this->CBModelUnit->Location = System::Drawing::Point(186, 108);
+			this->CBModelUnit->Location = System::Drawing::Point(186, 138);
 			this->CBModelUnit->Name = L"CBModelUnit";
 			this->CBModelUnit->Size = System::Drawing::Size(121, 26);
 			this->CBModelUnit->TabIndex = 7;
@@ -149,7 +157,7 @@ namespace Interface {
 			// TBNumPoint
 			// 
 			this->TBNumPoint->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11));
-			this->TBNumPoint->Location = System::Drawing::Point(186, 228);
+			this->TBNumPoint->Location = System::Drawing::Point(186, 258);
 			this->TBNumPoint->Name = L"TBNumPoint";
 			this->TBNumPoint->ReadOnly = true;
 			this->TBNumPoint->Size = System::Drawing::Size(50, 24);
@@ -159,7 +167,7 @@ namespace Interface {
 			// 
 			this->CBRole->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11));
 			this->CBRole->FormattingEnabled = true;
-			this->CBRole->Location = System::Drawing::Point(186, 188);
+			this->CBRole->Location = System::Drawing::Point(186, 218);
 			this->CBRole->Name = L"CBRole";
 			this->CBRole->Size = System::Drawing::Size(121, 26);
 			this->CBRole->TabIndex = 9;
@@ -167,7 +175,7 @@ namespace Interface {
 			// TBNameUnit
 			// 
 			this->TBNameUnit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11));
-			this->TBNameUnit->Location = System::Drawing::Point(186, 148);
+			this->TBNameUnit->Location = System::Drawing::Point(186, 178);
 			this->TBNameUnit->Name = L"TBNameUnit";
 			this->TBNameUnit->Size = System::Drawing::Size(121, 24);
 			this->TBNameUnit->TabIndex = 10;
@@ -175,7 +183,7 @@ namespace Interface {
 			// BtnAddFig
 			// 
 			this->BtnAddFig->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->BtnAddFig->Location = System::Drawing::Point(186, 450);
+			this->BtnAddFig->Location = System::Drawing::Point(105, 450);
 			this->BtnAddFig->Name = L"BtnAddFig";
 			this->BtnAddFig->Size = System::Drawing::Size(180, 30);
 			this->BtnAddFig->TabIndex = 11;
@@ -186,7 +194,7 @@ namespace Interface {
 			// BtnAddEquip
 			// 
 			this->BtnAddEquip->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->BtnAddEquip->Location = System::Drawing::Point(430, 450);
+			this->BtnAddEquip->Location = System::Drawing::Point(350, 450);
 			this->BtnAddEquip->Name = L"BtnAddEquip";
 			this->BtnAddEquip->Size = System::Drawing::Size(180, 30);
 			this->BtnAddEquip->TabIndex = 12;
@@ -194,11 +202,47 @@ namespace Interface {
 			this->BtnAddEquip->UseVisualStyleBackColor = true;
 			this->BtnAddEquip->Click += gcnew System::EventHandler(this, &AddUnit::BtnAddEquip_Click);
 			// 
+			// BtnOk
+			// 
+			this->BtnOk->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->BtnOk->Location = System::Drawing::Point(608, 452);
+			this->BtnOk->Name = L"BtnOk";
+			this->BtnOk->Size = System::Drawing::Size(75, 28);
+			this->BtnOk->TabIndex = 13;
+			this->BtnOk->Text = L"Valider";
+			this->BtnOk->UseVisualStyleBackColor = true;
+			this->BtnOk->Click += gcnew System::EventHandler(this, &AddUnit::BtnOk_Click);
+			// 
+			// LabelEquipList
+			// 
+			this->LabelEquipList->AutoSize = true;
+			this->LabelEquipList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->LabelEquipList->Location = System::Drawing::Point(400, 140);
+			this->LabelEquipList->Name = L"LabelEquipList";
+			this->LabelEquipList->Size = System::Drawing::Size(111, 20);
+			this->LabelEquipList->TabIndex = 14;
+			this->LabelEquipList->Text = L"Équipements :";
+			// 
+			// CBEquipList
+			// 
+			this->CBEquipList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->CBEquipList->FormattingEnabled = true;
+			this->CBEquipList->Location = System::Drawing::Point(535, 140);
+			this->CBEquipList->Name = L"CBEquipList";
+			this->CBEquipList->Size = System::Drawing::Size(200, 26);
+			this->CBEquipList->TabIndex = 15;
+			// 
 			// AddUnit
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(784, 511);
+			this->Controls->Add(this->CBEquipList);
+			this->Controls->Add(this->LabelEquipList);
+			this->Controls->Add(this->BtnOk);
 			this->Controls->Add(this->BtnAddEquip);
 			this->Controls->Add(this->BtnAddFig);
 			this->Controls->Add(this->TBNameUnit);
@@ -213,7 +257,7 @@ namespace Interface {
 			this->Controls->Add(this->LabelAddUnit);
 			this->Name = L"AddUnit";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"AddUnit";
+			this->Text = L"BtnOk";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -227,6 +271,10 @@ namespace Interface {
 	}
 	private: System::Void BtnAddEquip_Click(System::Object^  sender, System::EventArgs^  e) {
 		Form ^f = gcnew AddEquipment();
+		f->Show();
+	}
+	private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
+		Form ^f = gcnew SaveUnit();
 		f->Show();
 	}
 };

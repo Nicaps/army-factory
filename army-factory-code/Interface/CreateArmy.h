@@ -1,7 +1,5 @@
 #include "SaveArmy.h"
-#include "HomePage.h"
 #include "AddUnit.h"
-#include "AddEquipment.h"
 #include "Cancel.h"
 
 using namespace System;
@@ -43,7 +41,7 @@ namespace Interface {
 	private: System::Windows::Forms::Label^  LabelNameArmy;
 	private: System::Windows::Forms::Label^  LabelPointArmy;
 	private: System::Windows::Forms::Button^  BtnAddUnit;
-	private: System::Windows::Forms::Button^  BtnAddEquipment;
+
 	private: System::Windows::Forms::Button^  BtnSaveArmy;
 	private: System::Windows::Forms::Button^  BtnCancel;
 	private: System::Windows::Forms::TextBox^  TBNameArmy;
@@ -109,7 +107,6 @@ namespace Interface {
 			this->LabelNameArmy = (gcnew System::Windows::Forms::Label());
 			this->LabelPointArmy = (gcnew System::Windows::Forms::Label());
 			this->BtnAddUnit = (gcnew System::Windows::Forms::Button());
-			this->BtnAddEquipment = (gcnew System::Windows::Forms::Button());
 			this->BtnSaveArmy = (gcnew System::Windows::Forms::Button());
 			this->BtnCancel = (gcnew System::Windows::Forms::Button());
 			this->TBNameArmy = (gcnew System::Windows::Forms::TextBox());
@@ -166,17 +163,6 @@ namespace Interface {
 			this->BtnAddUnit->Text = L"Ajouter une unité";
 			this->BtnAddUnit->UseVisualStyleBackColor = true;
 			this->BtnAddUnit->Click += gcnew System::EventHandler(this, &CreateArmy::BtnAddUnit_Click);
-			// 
-			// BtnAddEquipment
-			// 
-			this->BtnAddEquipment->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->BtnAddEquipment->Location = System::Drawing::Point(185, 490);
-			this->BtnAddEquipment->Name = L"BtnAddEquipment";
-			this->BtnAddEquipment->Size = System::Drawing::Size(185, 30);
-			this->BtnAddEquipment->TabIndex = 4;
-			this->BtnAddEquipment->Text = L"Ajouter un équipement";
-			this->BtnAddEquipment->UseVisualStyleBackColor = true;
-			this->BtnAddEquipment->Click += gcnew System::EventHandler(this, &CreateArmy::BtnAddEquipment_Click);
 			// 
 			// BtnSaveArmy
 			// 
@@ -290,7 +276,6 @@ namespace Interface {
 			this->Controls->Add(this->TBNameArmy);
 			this->Controls->Add(this->BtnCancel);
 			this->Controls->Add(this->BtnSaveArmy);
-			this->Controls->Add(this->BtnAddEquipment);
 			this->Controls->Add(this->BtnAddUnit);
 			this->Controls->Add(this->LabelPointArmy);
 			this->Controls->Add(this->LabelNameArmy);
@@ -312,15 +297,13 @@ namespace Interface {
 	}
 	private: System::Void BtnCancel_Click(System::Object^  sender, System::EventArgs^  e) {
 		Form ^f = gcnew Cancel();
+		TBNameArmy->Clear();
+		TBPointArmy->Clear();
+		DataArmy->Refresh();
 		f->Show();
 	}
 	private: System::Void BtnAddUnit_Click(System::Object^  sender, System::EventArgs^  e) {
 		Form ^f = gcnew AddUnit();
-		f->Show();
-	}
-
-	private: System::Void BtnAddEquipment_Click(System::Object^  sender, System::EventArgs^  e) {
-		Form ^f = gcnew AddEquipment();
 		f->Show();
 	}
 };
