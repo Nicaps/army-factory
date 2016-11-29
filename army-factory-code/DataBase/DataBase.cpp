@@ -1,21 +1,47 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <winsock.h>
-#include <MYSQL/mysql.h>
+#include "DataBase.h"
 
-int main()
+DataBase::DataBase() : c_bIsConnected(false) {
+	c_mysql = mysql_init(NULL);
+	mysql_options(c_mysql, MYSQL_READ_DEFAULT_GROUP, "option");
+}
+
+void DataBase::connection(const char * p_sHostname, const char * p_sUser, const char * p_sPsswd, const char * p_sDbName)
 {
-	MYSQL *mysql = mysql_init(NULL);
-	mysql_options(mysql, MYSQL_READ_DEFAULT_GROUP, "option");
-
-	if (mysql_real_connect(mysql, "127.0.0.1", "ArmyFactory", "armyfactory", "test_army_factory", 0, NULL, 0))
+	if (mysql_real_connect(c_mysql, p_sHostname, p_sUser, p_sPsswd, p_sDbName, 0, NULL, 0))
 	{
 		printf("Connexion reussie\n");
-		mysql_close(mysql);
+		c_bIsConnected = true;
 	}
 	else
 	{
 		printf("Une erreur s'est produite lors de la connexion a la BDD!\n");
+		c_bIsConnected = false;
 	}
-	return 0;
+}
+
+void DataBase::endConnection()
+{
+	mysql_close(c_mysql);
+	c_bIsConnected = false;
+}
+
+bool DataBase::isConnected()
+{
+	return c_bIsConnected;
+}
+
+bool DataBase::insertArmy(const char *p_sArmyName)
+{
+	if (c_bIsConnected) {
+		std::string str1("INSERT INTO `army` (`id`, `name`, `cost`, `nbUnit`) VALUES (NULL, '");
+		std::string str2("', '0', '0');");
+		str1.append(p_sArmyName).append(str2);
+		const char *query = str1.c_str();
+		mysql_query(c_mysql, query);
+		return true;
+	}
+	else {
+		printf("La base n'est pas connectée.\n");
+		return false;
+	}
 }
