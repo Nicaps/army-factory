@@ -139,9 +139,10 @@
     <ClCompile Include="AddUnit.cpp" />
     <ClCompile Include="Cancel.cpp" />
     <ClCompile Include="CreateArmy.cpp" />
-    <ClCompile Include="DeletedArmy.cpp" />
     <ClCompile Include="HomePage.cpp" />
     <ClCompile Include="SaveArmy.cpp" />
+    <ClCompile Include="SaveFigurine.cpp" />
+    <ClCompile Include="SaveUnit.cpp" />
     <ClCompile Include="ValidatedArmy.cpp" />
     <ClCompile Include="ViewArmy.cpp" />
     <ClCompile Include="ViewFigurine.cpp" />
@@ -177,6 +178,12 @@
     <ClInclude Include="SaveArmy.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="SaveFigurine.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SaveUnit.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="ValidatedArmy.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -191,11 +198,20 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddFigurine.resx">
+      <DependentUpon>AddFigurine.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddUnit.resx">
       <DependentUpon>AddUnit.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancel.resx">
+      <DependentUpon>Cancel.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateArmy.resx">
       <DependentUpon>CreateArmy.h</DependentUpon>
@@ -205,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SaveArmy.resx">
       <DependentUpon>SaveArmy.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFigurine.resx">
+      <DependentUpon>SaveFigurine.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ValidatedArmy.resx">
       <DependentUpon>ValidatedArmy.h</DependentUpon>

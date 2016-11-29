@@ -36,6 +36,9 @@ namespace Interface {
 			}
 		}
 	private: System::Windows::Forms::Label^  LabelHomePage;
+	private: System::Windows::Forms::Button^  BtnLeave;
+
+
 	protected:
 
 	private:
@@ -52,6 +55,7 @@ namespace Interface {
 		void InitializeComponent(void)
 		{
 			this->LabelHomePage = (gcnew System::Windows::Forms::Label());
+			this->BtnLeave = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// LabelHomePage
@@ -60,17 +64,29 @@ namespace Interface {
 			this->LabelHomePage->BackColor = System::Drawing::SystemColors::Control;
 			this->LabelHomePage->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->LabelHomePage->Location = System::Drawing::Point(225, 5);
+			this->LabelHomePage->Location = System::Drawing::Point(350, 5);
 			this->LabelHomePage->Name = L"LabelHomePage";
 			this->LabelHomePage->Size = System::Drawing::Size(203, 63);
 			this->LabelHomePage->TabIndex = 1;
 			this->LabelHomePage->Text = L"Accueil";
+			// 
+			// BtnLeave
+			// 
+			this->BtnLeave->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->BtnLeave->Location = System::Drawing::Point(650, 475);
+			this->BtnLeave->Name = L"BtnLeave";
+			this->BtnLeave->Size = System::Drawing::Size(200, 28);
+			this->BtnLeave->TabIndex = 3;
+			this->BtnLeave->Text = L"Quitter l\'application";
+			this->BtnLeave->UseVisualStyleBackColor = true;
 			// 
 			// HomePage
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
+			this->Controls->Add(this->BtnLeave);
 			this->Controls->Add(this->LabelHomePage);
 			this->Name = L"HomePage";
 			this->Size = System::Drawing::Size(885, 540);

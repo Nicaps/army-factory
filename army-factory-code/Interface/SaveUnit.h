@@ -10,12 +10,12 @@ namespace Interface {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for DeletedArmy
+	/// Summary for SaveUnit
 	/// </summary>
-	public ref class DeletedArmy : public System::Windows::Forms::Form
+	public ref class SaveUnit : public System::Windows::Forms::Form
 	{
 	public:
-		DeletedArmy(void)
+		SaveUnit(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Interface {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~DeletedArmy()
+		~SaveUnit()
 		{
 			if (components)
 			{
@@ -50,7 +50,7 @@ namespace Interface {
 		{
 			this->components = gcnew System::ComponentModel::Container();
 			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"DeletedArmy";
+			this->Text = L"SaveUnit";
 			this->Padding = System::Windows::Forms::Padding(0);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 		}

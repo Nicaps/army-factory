@@ -27,9 +27,6 @@
     <ClCompile Include="ValidatedArmy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DeletedArmy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Cancel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -56,6 +53,12 @@
     </ClCompile>
     <ClCompile Include="SaveArmy.cpp">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveFigurine.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +107,12 @@
     <ClInclude Include="SaveArmy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SaveFigurine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveUnit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="HomePage.resx">
@@ -125,6 +134,12 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewFigurine.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUnit.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveArmy.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

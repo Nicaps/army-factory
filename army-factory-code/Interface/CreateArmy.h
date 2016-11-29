@@ -2,6 +2,7 @@
 #include "HomePage.h"
 #include "AddUnit.h"
 #include "AddEquipment.h"
+#include "Cancel.h"
 
 using namespace System;
 using namespace System::ComponentModel;
@@ -310,7 +311,8 @@ namespace Interface {
 		f->Show();
 	}
 	private: System::Void BtnCancel_Click(System::Object^  sender, System::EventArgs^  e) {
-		
+		Form ^f = gcnew Cancel();
+		f->Show();
 	}
 	private: System::Void BtnAddUnit_Click(System::Object^  sender, System::EventArgs^  e) {
 		Form ^f = gcnew AddUnit();
