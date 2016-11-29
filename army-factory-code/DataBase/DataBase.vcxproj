@@ -166,8 +166,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="DataBase.cpp" />
     <ClCompile Include="Main.cpp" />
+=======
+>>>>>>> 4744cc51b7d707627a04348901d7c1a0826f856b
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
