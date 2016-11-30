@@ -1,2 +1,2 @@
 # army-factory
-En espérant que celui ci fonctionne
+Application visant à superviser la création/édition d'armée pour le jeu de figurines Warhammer 40k.
