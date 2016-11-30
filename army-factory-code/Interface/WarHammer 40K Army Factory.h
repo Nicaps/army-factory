@@ -1,7 +1,7 @@
 #include "AboutUs.h"
 #include "About.h"
 #include "HomePage.h"
-#include "CreateArmy.h"
+//#include "CreateArmy.h"
 #include "ViewArmy.h"
 #include "ViewFigurine.h"
 

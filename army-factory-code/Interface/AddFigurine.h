@@ -1,6 +1,5 @@
 #pragma once
 #include "SaveFigurine.h"
-#include "AddEquipment.h"
 
 namespace Interface {
 
@@ -42,17 +41,23 @@ namespace Interface {
 
 	private: System::Windows::Forms::Label^  label3;
 
-	private: System::Windows::Forms::Button^  BtnAddEquip;
+
 
 	private: System::Windows::Forms::Button^  BtnOk;
 	private: System::Windows::Forms::TextBox^  TBName;
 	private: System::Windows::Forms::ComboBox^  CBType;
 	private: System::Windows::Forms::Label^  LabelEquip1;
 	private: System::Windows::Forms::Label^  LabelEquip2;
-	private: System::Windows::Forms::TextBox^  TBEquip1Name;
+
 	private: System::Windows::Forms::TextBox^  TBEquip1Type;
 	private: System::Windows::Forms::TextBox^  TBEquip2Name;
+	private: System::Windows::Forms::TextBox^  TBEquip1Name;
 	private: System::Windows::Forms::TextBox^  TBEquip2Type;
+
+
+	private: System::Windows::Forms::ComboBox^  comboBox1;
+	private: System::Windows::Forms::ComboBox^  comboBox2;
+
 
 
 
@@ -76,16 +81,17 @@ namespace Interface {
 			this->LabelName = (gcnew System::Windows::Forms::Label());
 			this->LabelType = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->BtnAddEquip = (gcnew System::Windows::Forms::Button());
 			this->BtnOk = (gcnew System::Windows::Forms::Button());
 			this->TBName = (gcnew System::Windows::Forms::TextBox());
 			this->CBType = (gcnew System::Windows::Forms::ComboBox());
 			this->LabelEquip1 = (gcnew System::Windows::Forms::Label());
 			this->LabelEquip2 = (gcnew System::Windows::Forms::Label());
-			this->TBEquip1Name = (gcnew System::Windows::Forms::TextBox());
 			this->TBEquip1Type = (gcnew System::Windows::Forms::TextBox());
 			this->TBEquip2Name = (gcnew System::Windows::Forms::TextBox());
+			this->TBEquip1Name = (gcnew System::Windows::Forms::TextBox());
 			this->TBEquip2Type = (gcnew System::Windows::Forms::TextBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
 			this->SuspendLayout();
 			// 
 			// LabelName
@@ -115,23 +121,11 @@ namespace Interface {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(35, 185);
+			this->label3->Location = System::Drawing::Point(35, 191);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(111, 20);
 			this->label3->TabIndex = 2;
 			this->label3->Text = L"Équipements :";
-			// 
-			// BtnAddEquip
-			// 
-			this->BtnAddEquip->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->BtnAddEquip->Location = System::Drawing::Point(35, 140);
-			this->BtnAddEquip->Name = L"BtnAddEquip";
-			this->BtnAddEquip->Size = System::Drawing::Size(200, 28);
-			this->BtnAddEquip->TabIndex = 4;
-			this->BtnAddEquip->Text = L"Ajouter un équipement";
-			this->BtnAddEquip->UseVisualStyleBackColor = true;
-			this->BtnAddEquip->Click += gcnew System::EventHandler(this, &AddFigurine::BtnAddEquip_Click);
 			// 
 			// BtnOk
 			// 
@@ -168,7 +162,7 @@ namespace Interface {
 			this->LabelEquip1->AutoSize = true;
 			this->LabelEquip1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->LabelEquip1->Location = System::Drawing::Point(80, 220);
+			this->LabelEquip1->Location = System::Drawing::Point(65, 220);
 			this->LabelEquip1->Name = L"LabelEquip1";
 			this->LabelEquip1->Size = System::Drawing::Size(96, 18);
 			this->LabelEquip1->TabIndex = 10;
@@ -179,29 +173,17 @@ namespace Interface {
 			this->LabelEquip2->AutoSize = true;
 			this->LabelEquip2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->LabelEquip2->Location = System::Drawing::Point(80, 260);
+			this->LabelEquip2->Location = System::Drawing::Point(65, 260);
 			this->LabelEquip2->Name = L"LabelEquip2";
 			this->LabelEquip2->Size = System::Drawing::Size(96, 18);
 			this->LabelEquip2->TabIndex = 11;
 			this->LabelEquip2->Text = L"équipement 2";
 			// 
-			// TBEquip1Name
-			// 
-			this->TBEquip1Name->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->TBEquip1Name->Location = System::Drawing::Point(200, 220);
-			this->TBEquip1Name->Name = L"TBEquip1Name";
-			this->TBEquip1Name->ReadOnly = true;
-			this->TBEquip1Name->Size = System::Drawing::Size(100, 23);
-			this->TBEquip1Name->TabIndex = 12;
-			this->TBEquip1Name->Tag = L"";
-			this->TBEquip1Name->Text = L"Nom";
-			// 
 			// TBEquip1Type
 			// 
 			this->TBEquip1Type->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->TBEquip1Type->Location = System::Drawing::Point(320, 220);
+			this->TBEquip1Type->Location = System::Drawing::Point(430, 220);
 			this->TBEquip1Type->Name = L"TBEquip1Type";
 			this->TBEquip1Type->ReadOnly = true;
 			this->TBEquip1Type->Size = System::Drawing::Size(100, 23);
@@ -212,39 +194,68 @@ namespace Interface {
 			// 
 			this->TBEquip2Name->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->TBEquip2Name->Location = System::Drawing::Point(200, 260);
+			this->TBEquip2Name->Location = System::Drawing::Point(310, 260);
 			this->TBEquip2Name->Name = L"TBEquip2Name";
 			this->TBEquip2Name->ReadOnly = true;
 			this->TBEquip2Name->Size = System::Drawing::Size(100, 23);
 			this->TBEquip2Name->TabIndex = 14;
 			this->TBEquip2Name->Text = L"Nom";
 			// 
+			// TBEquip1Name
+			// 
+			this->TBEquip1Name->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->TBEquip1Name->Location = System::Drawing::Point(310, 220);
+			this->TBEquip1Name->Name = L"TBEquip1Name";
+			this->TBEquip1Name->ReadOnly = true;
+			this->TBEquip1Name->Size = System::Drawing::Size(100, 23);
+			this->TBEquip1Name->TabIndex = 12;
+			this->TBEquip1Name->Tag = L"";
+			this->TBEquip1Name->Text = L"Nom";
+			// 
 			// TBEquip2Type
 			// 
 			this->TBEquip2Type->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->TBEquip2Type->Location = System::Drawing::Point(320, 260);
+			this->TBEquip2Type->Location = System::Drawing::Point(430, 260);
 			this->TBEquip2Type->Name = L"TBEquip2Type";
 			this->TBEquip2Type->ReadOnly = true;
 			this->TBEquip2Type->Size = System::Drawing::Size(100, 23);
 			this->TBEquip2Type->TabIndex = 15;
 			this->TBEquip2Type->Text = L"Type";
 			// 
+			// comboBox1
+			// 
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(170, 220);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 16;
+			// 
+			// comboBox2
+			// 
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Location = System::Drawing::Point(170, 260);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(121, 21);
+			this->comboBox2->TabIndex = 17;
+			// 
 			// AddFigurine
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(584, 361);
+			this->Controls->Add(this->comboBox2);
+			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->TBEquip2Type);
 			this->Controls->Add(this->TBEquip2Name);
-			this->Controls->Add(this->TBEquip1Type);
 			this->Controls->Add(this->TBEquip1Name);
+			this->Controls->Add(this->TBEquip1Type);
 			this->Controls->Add(this->LabelEquip2);
 			this->Controls->Add(this->LabelEquip1);
 			this->Controls->Add(this->CBType);
 			this->Controls->Add(this->TBName);
 			this->Controls->Add(this->BtnOk);
-			this->Controls->Add(this->BtnAddEquip);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->LabelType);
 			this->Controls->Add(this->LabelName);
@@ -260,9 +271,6 @@ private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e
 	Form ^f = gcnew SaveFigurine();
 	f->Show();
 }
-private: System::Void BtnAddEquip_Click(System::Object^  sender, System::EventArgs^  e) {
-	Form ^f = gcnew AddEquipment();
-	f->Show();
-}
+
 };
 }

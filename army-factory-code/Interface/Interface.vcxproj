@@ -225,6 +225,9 @@
     <EmbeddedResource Include="SaveFigurine.resx">
       <DependentUpon>SaveFigurine.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SaveUnit.resx">
+      <DependentUpon>SaveUnit.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ValidatedArmy.resx">
       <DependentUpon>ValidatedArmy.h</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +240,11 @@
     <EmbeddedResource Include="WarHammer 40K Army Factory.resx">
       <DependentUpon>WarHammer 40K Army Factory.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogiqueMetier\LogiqueMetier.vcxproj">
+      <Project>{ef7dd670-d020-4eb6-aa12-af08d102a7d7}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -34,7 +34,10 @@ namespace Interface {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^  BtnClose;
+	private: System::Windows::Forms::Button^  BtnOk;
+	protected:
+	private: System::Windows::Forms::Label^  LabelSaveFigurine;
+
 	protected:
 
 	protected:
@@ -52,35 +55,49 @@ namespace Interface {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->BtnClose = (gcnew System::Windows::Forms::Button());
+			this->BtnOk = (gcnew System::Windows::Forms::Button());
+			this->LabelSaveFigurine = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
-			// BtnClose
+			// BtnOk
 			// 
-			this->BtnClose->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->BtnClose->Location = System::Drawing::Point(81, 98);
-			this->BtnClose->Name = L"BtnClose";
-			this->BtnClose->Size = System::Drawing::Size(75, 28);
-			this->BtnClose->TabIndex = 0;
-			this->BtnClose->Text = L"Fermer";
-			this->BtnClose->UseVisualStyleBackColor = true;
-			this->BtnClose->Click += gcnew System::EventHandler(this, &SaveFigurine::BtnClose_Click);
+			this->BtnOk->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->BtnOk->Location = System::Drawing::Point(179, 156);
+			this->BtnOk->Name = L"BtnOk";
+			this->BtnOk->Size = System::Drawing::Size(75, 28);
+			this->BtnOk->TabIndex = 3;
+			this->BtnOk->Text = L"Valider";
+			this->BtnOk->UseVisualStyleBackColor = true;
+			this->BtnOk->Click += gcnew System::EventHandler(this, &SaveFigurine::BtnOk_Click);
+			// 
+			// LabelSaveFigurine
+			// 
+			this->LabelSaveFigurine->AutoSize = true;
+			this->LabelSaveFigurine->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->LabelSaveFigurine->Location = System::Drawing::Point(52, 76);
+			this->LabelSaveFigurine->Name = L"LabelSaveFigurine";
+			this->LabelSaveFigurine->Size = System::Drawing::Size(339, 20);
+			this->LabelSaveFigurine->TabIndex = 2;
+			this->LabelSaveFigurine->Text = L"Votre figurine a été enregistrée avec succès";
 			// 
 			// SaveFigurine
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 261);
-			this->Controls->Add(this->BtnClose);
+			this->ClientSize = System::Drawing::Size(434, 261);
+			this->Controls->Add(this->BtnOk);
+			this->Controls->Add(this->LabelSaveFigurine);
 			this->Name = L"SaveFigurine";
 			this->Text = L"SaveFigurine";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void BtnClose_Click(System::Object^  sender, System::EventArgs^  e) {
 		this->Close();
+	}
+	private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
 	};
 }
