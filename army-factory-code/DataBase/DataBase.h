@@ -7,16 +7,20 @@
 #include <winsock.h>
 #include <MYSQL/mysql.h>
 
-class DataBase {
-public:
-	DataBase();
-	void connection(const char *p_hostname, const char *p_user, const char *p_psswd, const char *p_dbName);
-	void endConnection();
-	bool isConnected();
+namespace nsDatabase {
 
-private:
-	MYSQL *c_mysql;
-	bool c_bIsConnected;
-};
+	class DataBase {
+	public:
+		DataBase();
+		void connection(const char *p_hostname, const char *p_user, const char *p_psswd, const char *p_dbName);
+		void endConnection();
+		bool isConnected();
+
+	private:
+		MYSQL *c_mysql;
+		bool c_bIsConnected;
+	};
+
+}
 
 #endif DEF_DB

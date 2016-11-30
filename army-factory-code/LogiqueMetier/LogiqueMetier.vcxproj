@@ -94,8 +94,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsManaged>true</CompileAsManaged>
       <AdditionalUsingDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
@@ -113,8 +112,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsManaged>true</CompileAsManaged>
       <AdditionalUsingDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
@@ -134,8 +132,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsManaged>true</CompileAsManaged>
       <AdditionalUsingDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
@@ -157,8 +154,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsManaged>true</CompileAsManaged>
       <AdditionalUsingDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\DataBase;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
