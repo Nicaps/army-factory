@@ -5,9 +5,9 @@ DataBase::DataBase() : c_bIsConnected(false) {
 	mysql_options(c_mysql, MYSQL_READ_DEFAULT_GROUP, "option");
 }
 
-void DataBase::connection(const char * p_sHostname, const char * p_sUser, const char * p_sPsswd, const char * p_sDbName)
+void DataBase::connection(const char * p_hostname, const char * p_user, const char * p_psswd, const char * p_dbName)
 {
-	if (mysql_real_connect(c_mysql, p_sHostname, p_sUser, p_sPsswd, p_sDbName, 0, NULL, 0))
+	if (mysql_real_connect(c_mysql, p_hostname, p_user, p_psswd, p_dbName, 0, NULL, 0))
 	{
 		printf("Connexion reussie\n");
 		c_bIsConnected = true;
@@ -28,20 +28,4 @@ void DataBase::endConnection()
 bool DataBase::isConnected()
 {
 	return c_bIsConnected;
-}
-
-bool DataBase::insertArmy(const char *p_sArmyName)
-{
-	if (c_bIsConnected) {
-		std::string str1("INSERT INTO `army` (`id`, `name`, `cost`, `nbUnit`) VALUES (NULL, '");
-		std::string str2("', '0', '0');");
-		str1.append(p_sArmyName).append(str2);
-		const char *query = str1.c_str();
-		mysql_query(c_mysql, query);
-		return true;
-	}
-	else {
-		printf("La base n'est pas connectée.\n");
-		return false;
-	}
 }

@@ -28,6 +28,13 @@ void Army::delUnit(Unit* p_Unit) {
 void Army::showUnits() {
 
 }
+void Army::insertIntoDb(DataBase *db)
+{
+}
+
+void Army::deleteFromDb(DataBase * db)
+{
+}
 #pragma endregion
 
 #pragma region Accessors

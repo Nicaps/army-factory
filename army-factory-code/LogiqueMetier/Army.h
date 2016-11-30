@@ -13,6 +13,7 @@
 
 //Custom includes
 #include "Unit.h"
+#using "DataBase.h"
 
 //Class definition
 class Army {
@@ -23,6 +24,8 @@ public:
 	void addUnit(Unit* p_Unit);
 	void delUnit(Unit* p_Unit);
 	void showUnits();
+	void insertIntoDb(DataBase *db);
+	void deleteFromDb(DataBase *db);
 	std::string getName();
 	int getNbUnits();
 	int getCost();
