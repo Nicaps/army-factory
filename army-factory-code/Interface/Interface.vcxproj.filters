@@ -154,5 +154,8 @@
     <EmbeddedResource Include="SaveFigurine.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="SaveUnit.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -19,37 +19,36 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{66366249-94A1-4D35-90E9-65D1AB04F24C}</ProjectGuid>
+    <ProjectGuid>{7D47DFBE-7005-44A7-8AD0-7EC0836A62BF}</ProjectGuid>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>Interface</RootNamespace>
+    <RootNamespace>DAL</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CLRSupport>true</CLRSupport>
@@ -90,182 +89,72 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalUsingDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\DLL;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
-    <PostBuildEvent>
-      <Command>$ Copie ( &lt;ProjectDir&gt;) mylib.dll $ ( &lt;TargetDir&gt;)</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalUsingDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\DLL;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
-    <PostBuildEvent>
-      <Command>$ Copie ( &lt;ProjectDir&gt;) mylib.dll $ ( &lt;TargetDir&gt;)</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalUsingDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\DLL;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
-    <PostBuildEvent>
-      <Command>$ Copie ( &lt;ProjectDir&gt;) mylib.dll $ ( &lt;TargetDir&gt;)</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalUsingDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\DLL;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
-    <PostBuildEvent>
-      <Command>$ Copie ( &lt;ProjectDir&gt;) mylib.dll $ ( &lt;TargetDir&gt;)</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Reference Include="BLL">
-      <HintPath>..\Debug\BLL.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="About.cpp" />
-    <ClCompile Include="AboutUs.cpp" />
-    <ClCompile Include="AddEquipment.cpp" />
-    <ClCompile Include="AddFigurine.cpp" />
-    <ClCompile Include="AddUnit.cpp" />
-    <ClCompile Include="Cancel.cpp" />
-    <ClCompile Include="CreateArmy.cpp" />
-    <ClCompile Include="HomePage.cpp" />
-    <ClCompile Include="SaveArmy.cpp" />
-    <ClCompile Include="SaveFigurine.cpp" />
-    <ClCompile Include="SaveUnit.cpp" />
-    <ClCompile Include="ValidatedArmy.cpp" />
-    <ClCompile Include="ViewArmy.cpp" />
-    <ClCompile Include="ViewFigurine.cpp" />
-    <ClCompile Include="WarHammer 40K Army Factory.cpp" />
+    <ClInclude Include="DAL.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="About.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="AboutUs.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="AddEquipment.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="AddFigurine.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="AddUnit.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="Cancel.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="CreateArmy.h">
-      <FileType>CppControl</FileType>
-    </ClInclude>
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="HomePage.h">
-      <FileType>CppControl</FileType>
-    </ClInclude>
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="SaveArmy.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="SaveFigurine.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="SaveUnit.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="ValidatedArmy.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="ViewArmy.h">
-      <FileType>CppControl</FileType>
-    </ClInclude>
-    <ClInclude Include="ViewFigurine.h">
-      <FileType>CppControl</FileType>
-    </ClInclude>
-    <ClInclude Include="WarHammer 40K Army Factory.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="DAL.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AboutUs.resx">
-      <DependentUpon>AboutUs.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddFigurine.resx">
-      <DependentUpon>AddFigurine.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddUnit.resx">
-      <DependentUpon>AddUnit.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cancel.resx">
-      <DependentUpon>Cancel.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateArmy.resx">
-      <DependentUpon>CreateArmy.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HomePage.resx">
-      <DependentUpon>HomePage.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveArmy.resx">
-      <DependentUpon>SaveArmy.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveFigurine.resx">
-      <DependentUpon>SaveFigurine.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveUnit.resx">
-      <DependentUpon>SaveUnit.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ValidatedArmy.resx">
-      <DependentUpon>ValidatedArmy.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewArmy.resx">
-      <DependentUpon>ViewArmy.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewFigurine.resx">
-      <DependentUpon>ViewFigurine.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WarHammer 40K Army Factory.resx">
-      <DependentUpon>WarHammer 40K Army Factory.h</DependentUpon>
-    </EmbeddedResource>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

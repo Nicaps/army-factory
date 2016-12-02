@@ -10,6 +10,7 @@ namespace Interface {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace BLL;
 
 	/// <summary>
 	/// Summary for AddUnit
@@ -51,6 +52,8 @@ namespace Interface {
 	private: System::Windows::Forms::Button^  BtnOk;
 	private: System::Windows::Forms::Label^  LabelEquipList;
 	private: System::Windows::Forms::ComboBox^  CBEquipList;
+	//private: BLL::Army^ Team;
+
 
 	protected:
 
@@ -67,6 +70,7 @@ namespace Interface {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+		//BLL:Army *Team;
 			this->LabelAddUnit = (gcnew System::Windows::Forms::Label());
 			this->LabelName = (gcnew System::Windows::Forms::Label());
 			this->LabelRole = (gcnew System::Windows::Forms::Label());
@@ -276,6 +280,9 @@ namespace Interface {
 	private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
 		Form ^f = gcnew SaveUnit();
 		f->Show();
+		BLL::Army^ Team;
+		//Team = new Army();
+		
 	}
 };
 }

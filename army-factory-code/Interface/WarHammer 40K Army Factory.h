@@ -5,6 +5,7 @@
 #include "ViewArmy.h"
 #include "ViewFigurine.h"
 
+
 namespace Interface {
 
 	using namespace System;
@@ -20,6 +21,7 @@ namespace Interface {
 	public ref class WarHammer40KArmyFactory : public System::Windows::Forms::Form
 	{
 	private:
+		
 		System::ComponentModel::IContainer^ components;
 		Interface::HomePage^ Home;
 		Interface::CreateArmy^ NewArmy;
