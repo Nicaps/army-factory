@@ -7,7 +7,8 @@ nsDatabase::DataBase::DataBase() : c_bIsConnected(false) {
 
 void nsDatabase::DataBase::connection(const char * p_hostname, const char * p_user, const char * p_psswd, const char * p_dbName)
 {
-	if (mysql_real_connect(c_mysql, p_hostname, p_user, p_psswd, p_dbName, 0, NULL, 0))
+	bool conn = mysql_real_connect(c_mysql, p_hostname, p_user, p_psswd, p_dbName, 0, NULL, 0);
+	if (conn)
 	{
 		printf("Connexion reussie\n");
 		c_bIsConnected = true;
@@ -21,8 +22,10 @@ void nsDatabase::DataBase::connection(const char * p_hostname, const char * p_us
 
 void nsDatabase::DataBase::endConnection()
 {
-	mysql_close(c_mysql);
-	c_bIsConnected = false;
+	if (c_bIsConnected) {
+		mysql_close(c_mysql);
+		c_bIsConnected = false;
+	}
 }
 
 bool nsDatabase::DataBase::isConnected()
