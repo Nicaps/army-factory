@@ -67,6 +67,7 @@ namespace Interface {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+		//BLL:Army *Team;
 			this->LabelAddUnit = (gcnew System::Windows::Forms::Label());
 			this->LabelName = (gcnew System::Windows::Forms::Label());
 			this->LabelRole = (gcnew System::Windows::Forms::Label());
