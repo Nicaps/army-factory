@@ -9,7 +9,7 @@
 //#include <mysql\mysql.h>
 
 namespace DAL {
-	public class Data
+	class Data
 	{
 	public:
 		Data();
