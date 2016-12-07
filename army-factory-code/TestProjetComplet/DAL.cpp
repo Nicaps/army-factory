@@ -1,6 +1,6 @@
 #include "DAL.h"
 namespace DAL {
-	/*Data::Data() : c_bIsConnected(false) {
+	Data::Data() : c_bIsConnected(false) {
 		c_mysql = mysql_init(NULL);
 		mysql_options(c_mysql, MYSQL_READ_DEFAULT_GROUP, "option");
 	}
@@ -28,5 +28,5 @@ namespace DAL {
 	bool Data::isConnected()
 	{
 		return c_bIsConnected;
-	}*/
+	}
 }

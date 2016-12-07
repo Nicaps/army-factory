@@ -1,3 +1,4 @@
+#include "DAL.h"
 #include "AboutUs.h"
 #include "About.h"
 #include "HomePage.h"
@@ -5,9 +6,7 @@
 #include "ViewArmy.h"
 #include "ViewFigurine.h"
 
-
 namespace Interface {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
