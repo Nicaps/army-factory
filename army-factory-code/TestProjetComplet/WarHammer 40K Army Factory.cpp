@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+#include "WarHammer 40K Army Factory.h"
+=======
+#include "DAL.h"
+>>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068
+
+//DOIT ÊTRE EN DERNIER
 #include "WarHammer 40K Army Factory.h"
 
 using namespace System;
