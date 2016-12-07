@@ -1,5 +1,7 @@
-#include "WarHammer 40K Army Factory.h"
 #include "DAL.h"
+
+//DOIT ÊTRE EN DERNIER
+#include "WarHammer 40K Army Factory.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
