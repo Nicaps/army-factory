@@ -8,6 +8,7 @@
 #include <winsock.h>
 #include <mysql\mysql.h>
 
+namespace DAL {
 	public class Data
 	{
 	public:
@@ -20,6 +21,6 @@
 		MYSQL *c_mysql;
 		bool c_bIsConnected;
 	};
-
+}
 
 #endif 
