@@ -6,7 +6,7 @@
 #include <string>
 #include <iostream>
 #include <winsock.h>
-#include <mysql\mysql.h>
+#include <mysql.h>
 
 namespace DAL {
 	class Data
