@@ -6,7 +6,7 @@
 #include <string>
 #include <iostream>
 #include <winsock.h>
-#include <mysql\mysql.h>
+//#include <mysql\mysql.h>
 
 namespace DAL {
 	public class Data
@@ -18,7 +18,7 @@ namespace DAL {
 		bool isConnected();
 
 	private:
-		MYSQL *c_mysql;
+		//MYSQL *c_mysql;
 		bool c_bIsConnected;
 	};
 }
