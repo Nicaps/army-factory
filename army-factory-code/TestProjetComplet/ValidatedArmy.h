@@ -70,5 +70,5 @@ namespace Interface {
 			this->ResumeLayout(false);
 
 		}
-};
+	};
 }

@@ -266,11 +266,11 @@ namespace Interface {
 
 		}
 #pragma endregion
-private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
-	this->Close();
-	Form ^f = gcnew SaveFigurine();
-	f->Show();
-}
+	private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Close();
+		Form ^f = gcnew SaveFigurine();
+		f->Show();
+	}
 
-};
+	};
 }

@@ -177,7 +177,6 @@
     <ClCompile Include="AddFigurine.cpp" />
     <ClCompile Include="AddUnit.cpp" />
     <ClCompile Include="Army.cpp" />
-    <ClCompile Include="Cancel.cpp" />
     <ClCompile Include="CreateArmy.cpp" />
     <ClCompile Include="DAL.cpp" />
     <ClCompile Include="Equipment.cpp" />
@@ -198,31 +197,58 @@
     <ClCompile Include="WarHammer 40K Army Factory.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="About.h" />
-    <ClInclude Include="AboutUs.h" />
-    <ClInclude Include="AddEquipment.h" />
-    <ClInclude Include="AddFigurine.h" />
-    <ClInclude Include="AddUnit.h" />
+    <ClInclude Include="About.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AboutUs.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddEquipment.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddFigurine.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddUnit.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Army.h" />
-    <ClInclude Include="Cancel.h" />
-    <ClInclude Include="CreateArmy.h" />
+    <ClInclude Include="CreateArmy.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="DAL.h" />
     <ClInclude Include="Equipment.h" />
     <ClInclude Include="Figurine.h" />
     <ClInclude Include="Header.h" />
-    <ClInclude Include="HomePage.h" />
+    <ClInclude Include="HomePage.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="Option.h" />
     <ClInclude Include="Role.h" />
     <ClInclude Include="Rule.h" />
-    <ClInclude Include="SaveArmy.h" />
-    <ClInclude Include="SaveFigurine.h" />
-    <ClInclude Include="SaveUnit.h" />
+    <ClInclude Include="SaveArmy.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="SaveFigurine.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="SaveUnit.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="Type.h" />
     <ClInclude Include="Unit.h" />
-    <ClInclude Include="ValidatedArmy.h" />
-    <ClInclude Include="ViewArmy.h" />
-    <ClInclude Include="ViewFigurine.h" />
-    <ClInclude Include="WarHammer 40K Army Factory.h" />
+    <ClInclude Include="ValidatedArmy.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ViewArmy.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ViewFigurine.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="WarHammer 40K Army Factory.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -230,6 +256,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

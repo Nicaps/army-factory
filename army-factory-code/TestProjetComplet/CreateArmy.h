@@ -306,5 +306,5 @@ namespace Interface {
 		Form ^f = gcnew AddUnit();
 		f->Show();
 	}
-};
+	};
 }

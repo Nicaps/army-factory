@@ -40,7 +40,8 @@ namespace Interface {
 	private: System::Windows::Forms::Label^  LabelHomePage;
 	private: System::Windows::Forms::Button^  BtnLeave;
 	private: System::Windows::Forms::Label^  LabelMsg;
-	private: System::Windows::Forms::LinkLabel^  LLabelEditArmy;
+	private: System::Windows::Forms::Label^  LblWH40K;
+
 
 
 	protected:
@@ -58,10 +59,11 @@ namespace Interface {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(HomePage::typeid));
 			this->LabelHomePage = (gcnew System::Windows::Forms::Label());
 			this->BtnLeave = (gcnew System::Windows::Forms::Button());
 			this->LabelMsg = (gcnew System::Windows::Forms::Label());
-			this->LLabelEditArmy = (gcnew System::Windows::Forms::LinkLabel());
+			this->LblWH40K = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// LabelHomePage
@@ -93,31 +95,26 @@ namespace Interface {
 			this->LabelMsg->AutoSize = true;
 			this->LabelMsg->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->LabelMsg->Location = System::Drawing::Point(80, 125);
+			this->LabelMsg->Location = System::Drawing::Point(198, 125);
 			this->LabelMsg->Name = L"LabelMsg";
 			this->LabelMsg->Size = System::Drawing::Size(488, 25);
 			this->LabelMsg->TabIndex = 4;
-			this->LabelMsg->Text = L"Bienvenue sur votre éditeur d\'arémes Warhammer 40K";
+			this->LabelMsg->Text = L"Bienvenue sur votre éditeur d\'armées Warhammer 40K";
 			// 
-			// LLabelEditArmy
+			// LblWH40K
 			// 
-			this->LLabelEditArmy->AutoSize = true;
-			this->LLabelEditArmy->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->LLabelEditArmy->Location = System::Drawing::Point(133, 195);
-			this->LLabelEditArmy->Name = L"LLabelEditArmy";
-			this->LLabelEditArmy->Size = System::Drawing::Size(118, 18);
-			this->LLabelEditArmy->TabIndex = 5;
-			this->LLabelEditArmy->TabStop = true;
-			this->LLabelEditArmy->Text = L"éditer une armée";
-			this->LLabelEditArmy->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &HomePage::LLabelEditArmy_LinkClicked);
+			this->LblWH40K->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"LblWH40K.Image")));
+			this->LblWH40K->Location = System::Drawing::Point(250, 220);
+			this->LblWH40K->Name = L"LblWH40K";
+			this->LblWH40K->Size = System::Drawing::Size(400, 100);
+			this->LblWH40K->TabIndex = 5;
 			// 
 			// HomePage
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
-			this->Controls->Add(this->LLabelEditArmy);
+			this->Controls->Add(this->LblWH40K);
 			this->Controls->Add(this->LabelMsg);
 			this->Controls->Add(this->BtnLeave);
 			this->Controls->Add(this->LabelHomePage);
@@ -136,5 +133,5 @@ namespace Interface {
 		NArmy = gcnew Interface::CreateArmy;
 		this->ParentForm->Controls->Add(NArmy);
 	}
-};
+	};
 }

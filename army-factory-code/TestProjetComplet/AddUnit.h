@@ -284,14 +284,14 @@ namespace Interface {
 		Unite.setName(VarS);
 
 		String^ SvaR = gcnew String(Unite.getName().c_str());
-		
+
 		//TBNumPoint->Text = TBNumPoint->Text + "ok" + SvaR;//gcnew String(Unite.getName().c_str());
-		
+
 		this->TBNumPoint->Text = SvaR;
-		
-//		TBNumPoint->Text = Convert::ToString(SvaR);
+
+		//		TBNumPoint->Text = Convert::ToString(SvaR);
 		Form ^f = gcnew SaveUnit();
 		f->Show();
 	}
-};
+	};
 }

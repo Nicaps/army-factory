@@ -2,7 +2,6 @@
 #include "AboutUs.h"
 #include "About.h"
 #include "HomePage.h"
-//#include "CreateArmy.h"
 #include "ViewArmy.h"
 #include "ViewFigurine.h"
 
@@ -20,7 +19,7 @@ namespace Interface {
 	public ref class WarHammer40KArmyFactory : public System::Windows::Forms::Form
 	{
 	private:
-		
+
 		System::ComponentModel::IContainer^ components;
 		Interface::HomePage^ Home;
 		Interface::CreateArmy^ NewArmy;
@@ -211,5 +210,5 @@ namespace Interface {
 		Form ^ f = gcnew About();
 		f->Show();
 	}
-};
+	};
 }
