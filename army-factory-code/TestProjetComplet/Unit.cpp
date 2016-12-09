@@ -26,15 +26,19 @@ namespace BLL {
 
 #pragma region Accessor
 	int Unit::getNbFigurines() {
-		return c_iNbFig;
+		return this->c_iNbFig;
 	}
 
 	int Unit::getId() {
-		return c_iId;
+		return this->c_iId;
 	}
 
 	int Unit::getCost() {
 		return c_iCost;
+	}
+
+	std::string Unit::getName() {
+		return c_sName;
 	}
 
 	Role Unit::getRole() {
@@ -43,6 +47,8 @@ namespace BLL {
 #pragma endregion
 
 #pragma region Mutator
-
+	void Unit::setName(std::string p_sName) {
+		c_sName = p_sName;
+	}
 #pragma endregion
 }

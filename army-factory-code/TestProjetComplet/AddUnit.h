@@ -1,3 +1,5 @@
+#include <msclr\marshal_cppstd.h>
+#include "Unit.h"
 #include "AddFigurine.h"
 #include "AddEquipment.h"
 #include "SaveUnit.h"
@@ -67,7 +69,6 @@ namespace Interface {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-		//BLL:Army *Team;
 			this->LabelAddUnit = (gcnew System::Windows::Forms::Label());
 			this->LabelName = (gcnew System::Windows::Forms::Label());
 			this->LabelRole = (gcnew System::Windows::Forms::Label());
@@ -161,7 +162,7 @@ namespace Interface {
 			this->TBNumPoint->Location = System::Drawing::Point(186, 258);
 			this->TBNumPoint->Name = L"TBNumPoint";
 			this->TBNumPoint->ReadOnly = true;
-			this->TBNumPoint->Size = System::Drawing::Size(50, 24);
+			this->TBNumPoint->Size = System::Drawing::Size(250, 24);
 			this->TBNumPoint->TabIndex = 8;
 			// 
 			// CBRole
@@ -275,6 +276,20 @@ namespace Interface {
 		f->Show();
 	}
 	private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
+
+		BLL::Unit Unite;
+		std::string VarS = "";
+		VarS.clear();
+		VarS = msclr::interop::marshal_as<std::string>(this->TBNameUnit->ToString());
+		Unite.setName(VarS);
+
+		String^ SvaR = gcnew String(Unite.getName().c_str());
+		
+		//TBNumPoint->Text = TBNumPoint->Text + "ok" + SvaR;//gcnew String(Unite.getName().c_str());
+		
+		this->TBNumPoint->Text = SvaR;
+		
+//		TBNumPoint->Text = Convert::ToString(SvaR);
 		Form ^f = gcnew SaveUnit();
 		f->Show();
 	}

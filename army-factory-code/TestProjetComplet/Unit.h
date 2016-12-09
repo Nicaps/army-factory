@@ -17,7 +17,7 @@
 
 namespace BLL {
 	//Class definition
-	class Unit {
+	public class Unit {
 	public:
 		Unit();
 		~Unit();
@@ -28,6 +28,8 @@ namespace BLL {
 		int getId();
 		int getCost();
 		Role getRole();
+		std::string getName();
+		void setName(std::string p_sName);
 	protected:
 		static int NEXT_VALID_ID;
 		std::string c_sName;
