@@ -7,7 +7,7 @@ using namespace System::Windows::Forms;
 [STAThread]
 void Main(array<String^>^args) {
 
-	DAL::Data *dt = new DAL::Data();
+	//DAL::Data *dt = new DAL::Data();
 	//dt->connection("127.0.0.1", "ArmyFactory", "armyfactory", "test_army_factory");
 	//if (dt->isConnected()) {
 	Application::EnableVisualStyles();

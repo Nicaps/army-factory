@@ -1,4 +1,4 @@
-#include "DAL.h"
+/*#include "DAL.h"
 namespace DAL {
 	Data::Data() : c_bIsConnected(false) {
 		c_mysql = mysql_init(NULL);
@@ -29,4 +29,4 @@ namespace DAL {
 	{
 		return c_bIsConnected;
 	}
-}
+}*/

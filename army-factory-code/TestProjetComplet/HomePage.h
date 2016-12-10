@@ -41,6 +41,10 @@ namespace Interface {
 	private: System::Windows::Forms::Button^  BtnLeave;
 	private: System::Windows::Forms::Label^  LabelMsg;
 	private: System::Windows::Forms::Label^  LblWH40K;
+	private: System::Windows::Forms::Label^  LabelWH;
+	private: System::Windows::Forms::PictureBox^  PictureWH40K;
+
+
 
 
 
@@ -64,6 +68,9 @@ namespace Interface {
 			this->BtnLeave = (gcnew System::Windows::Forms::Button());
 			this->LabelMsg = (gcnew System::Windows::Forms::Label());
 			this->LblWH40K = (gcnew System::Windows::Forms::Label());
+			this->LabelWH = (gcnew System::Windows::Forms::Label());
+			this->PictureWH40K = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PictureWH40K))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// LabelHomePage
@@ -103,23 +110,42 @@ namespace Interface {
 			// 
 			// LblWH40K
 			// 
-			this->LblWH40K->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"LblWH40K.Image")));
-			this->LblWH40K->Location = System::Drawing::Point(250, 220);
+			this->LblWH40K->Location = System::Drawing::Point(0, 0);
 			this->LblWH40K->Name = L"LblWH40K";
-			this->LblWH40K->Size = System::Drawing::Size(400, 100);
-			this->LblWH40K->TabIndex = 5;
+			this->LblWH40K->Size = System::Drawing::Size(100, 23);
+			this->LblWH40K->TabIndex = 0;
+			// 
+			// LabelWH
+			// 
+			this->LabelWH->Location = System::Drawing::Point(0, 0);
+			this->LabelWH->Name = L"LabelWH";
+			this->LabelWH->Size = System::Drawing::Size(100, 23);
+			this->LabelWH->TabIndex = 0;
+			// 
+			// PictureWH40K
+			// 
+			//this->PictureWH40K->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"PictureWH40K.Image")));
+			this->PictureWH40K->ImageLocation = L"img\\wh40k.png";
+			this->PictureWH40K->Location = System::Drawing::Point(242, 220);
+			this->PictureWH40K->Name = L"PictureWH40K";
+			this->PictureWH40K->Size = System::Drawing::Size(400, 100);
+			this->PictureWH40K->TabIndex = 6;
+			this->PictureWH40K->TabStop = false;
 			// 
 			// HomePage
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
+			this->Controls->Add(this->PictureWH40K);
+			this->Controls->Add(this->LabelWH);
 			this->Controls->Add(this->LblWH40K);
 			this->Controls->Add(this->LabelMsg);
 			this->Controls->Add(this->BtnLeave);
 			this->Controls->Add(this->LabelHomePage);
 			this->Name = L"HomePage";
 			this->Size = System::Drawing::Size(885, 540);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->PictureWH40K))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

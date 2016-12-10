@@ -1,5 +1,5 @@
 #pragma once
-
+/*
 #ifndef DEF_DAL
 #define DEF_DAL
 
@@ -23,4 +23,4 @@ namespace DAL {
 	};
 }
 
-#endif 
+#endif */
