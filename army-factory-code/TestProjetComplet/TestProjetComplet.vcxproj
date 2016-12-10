@@ -92,7 +92,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!--=======-->
-      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
@@ -102,7 +102,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!--=======-->
-      <AdditionalLibraryDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </Link>
   </ItemDefinitionGroup>
@@ -114,7 +114,7 @@
       <!--<<<<<<< HEAD-->
       <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!--=======-->
-      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
@@ -124,7 +124,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!--=======-->
-      <AdditionalLibraryDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!-->>>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </Link>
   </ItemDefinitionGroup>
@@ -135,7 +135,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!--=======-->
-      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
@@ -145,7 +145,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!--=======-->
-      <AdditionalLibraryDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </Link>
   </ItemDefinitionGroup>
@@ -156,7 +156,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!--=======-->
-      <AdditionalIncludeDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
@@ -166,7 +166,7 @@
       <!--<<<<<< HEAD-->
       <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!--=======-->
-      <AdditionalLibraryDirectories>D:\Logiciels\Microsoft Visual Studio 14.0\Projects\army-factory\army-factory-code\mysql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Stockage\Documents\GitHub\army-factory\army-factory-code\MySQL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </Link>
   </ItemDefinitionGroup>
