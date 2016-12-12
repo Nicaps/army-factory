@@ -1,187 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Fichiers sources">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Fichiers de ressources">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="About.cpp" />
+    <ClCompile Include="AboutUs.cpp" />
+    <ClCompile Include="AddEquipment.cpp" />
+    <ClCompile Include="AddFigurine.cpp" />
+    <ClCompile Include="AddUnit.cpp" />
+    <ClCompile Include="Army.cpp" />
+    <ClCompile Include="Connexion.cpp" />
+    <ClCompile Include="CreateArmy.cpp" />
+    <ClCompile Include="DAL.cpp" />
+    <ClCompile Include="Equipment.cpp" />
+    <ClCompile Include="Figurine.cpp" />
+    <ClCompile Include="HomePage.cpp" />
+    <ClCompile Include="Option.cpp" />
+    <ClCompile Include="Role.cpp" />
+    <ClCompile Include="Rule.cpp" />
+    <ClCompile Include="SaveArmy.cpp" />
+    <ClCompile Include="SaveFigurine.cpp" />
+    <ClCompile Include="SaveUnit.cpp" />
+    <ClCompile Include="Type.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="ValidatedArmy.cpp" />
+    <ClCompile Include="ViewArmy.cpp" />
+    <ClCompile Include="ViewFigurine.cpp" />
+    <ClCompile Include="WarHammer 40K Army Factory.cpp" />
+    <ClCompile Include="bdd.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Army.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Equipment.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Figurine.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Option.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Role.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Rule.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Type.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="AboutUs.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="About.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="WarHammer 40K Army Factory.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewFigurine.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewArmy.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="ValidatedArmy.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="SaveUnit.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="SaveFigurine.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="SaveArmy.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="HomePage.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="CreateArmy.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="AddUnit.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="AddFigurine.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="AddEquipment.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="DAL.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="FigurineDAL.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Connexion.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
+    <ClInclude Include="About.h" />
+    <ClInclude Include="AboutUs.h" />
+    <ClInclude Include="AddEquipment.h" />
+    <ClInclude Include="AddFigurine.h" />
+    <ClInclude Include="AddUnit.h" />
+    <ClInclude Include="Army.h" />
+    <ClInclude Include="BLL.h" />
+    <ClInclude Include="Connexion.h" />
+    <ClInclude Include="CreateArmy.h" />
+    <ClInclude Include="DAL.h" />
+    <ClInclude Include="Equipment.h" />
+    <ClInclude Include="Figurine.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="HomePage.h" />
+    <ClInclude Include="Option.h" />
+    <ClInclude Include="Role.h" />
+    <ClInclude Include="Rule.h" />
+    <ClInclude Include="SaveArmy.h" />
+    <ClInclude Include="SaveFigurine.h" />
+    <ClInclude Include="SaveUnit.h" />
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="ValidatedArmy.h" />
+    <ClInclude Include="ViewArmy.h" />
+    <ClInclude Include="ViewFigurine.h" />
+    <ClInclude Include="WarHammer 40K Army Factory.h" />
+    <ClInclude Include="bdd.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Army.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Equipment.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Figurine.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Option.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Role.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Rule.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Type.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="AboutUs.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="About.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="WarHammer 40K Army Factory.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewFigurine.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewArmy.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="ValidatedArmy.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="SaveUnit.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="SaveFigurine.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="SaveArmy.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="HomePage.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="CreateArmy.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="AddUnit.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="AddFigurine.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="AddEquipment.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="DAL.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="FigurineDAL.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Connexion.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
+    <Image Include="img\wh40k.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="HomePage.resx">
-      <Filter>Fichiers de ressources</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WarHammer 40K Army Factory.resx">
-      <Filter>Fichiers de ressources</Filter>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="img\wh40k.png">
-      <Filter>Fichiers de ressources</Filter>
-    </Image>
+    <EmbeddedResource Include="HomePage.resx" />
+    <EmbeddedResource Include="WarHammer 40K Army Factory.resx" />
   </ItemGroup>
 </Project>

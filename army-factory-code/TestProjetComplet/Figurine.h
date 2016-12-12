@@ -15,6 +15,7 @@
 
 //Custom includes
 #include "DAL.h"
+#include "Connexion.h"
 #include "Equipment.h"
 #include "Type.h"
 #include "Rule.h"

@@ -183,12 +183,12 @@
     <ClCompile Include="AddFigurine.cpp" />
     <ClCompile Include="AddUnit.cpp" />
     <ClCompile Include="Army.cpp" />
+    <ClCompile Include="bdd.cpp" />
     <ClCompile Include="Connexion.cpp" />
     <ClCompile Include="CreateArmy.cpp" />
     <ClCompile Include="DAL.cpp" />
     <ClCompile Include="Equipment.cpp" />
     <ClCompile Include="Figurine.cpp" />
-    <ClCompile Include="FigurineDAL.cpp" />
     <ClCompile Include="HomePage.cpp" />
     <ClCompile Include="Option.cpp" />
     <ClCompile Include="Role.cpp" />
@@ -220,6 +220,11 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Army.h" />
+    <!--<<<<<< HEAD-->
+    <!--=======-->
+    <ClInclude Include="bdd.h" />
+    <ClInclude Include="BLL.h" />
+    <!-->>>>>>> 953f28998dabff13677bcc57406a8a2a044f6484-->
     <ClInclude Include="Connexion.h" />
     <ClInclude Include="CreateArmy.h">
       <FileType>CppControl</FileType>
@@ -227,7 +232,6 @@
     <ClInclude Include="DAL.h" />
     <ClInclude Include="Equipment.h" />
     <ClInclude Include="Figurine.h" />
-    <ClInclude Include="FigurineDAL.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="HomePage.h">
       <FileType>CppControl</FileType>
