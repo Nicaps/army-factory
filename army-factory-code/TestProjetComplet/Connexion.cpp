@@ -37,10 +37,10 @@ namespace BLL {
 	}
 
 	std::string Connexion::getName() {
-
+		return this->c_sName;
 	}
 
-	int Connexion::getType() {
-
+	int Connexion::getTypeFig() {
+		return this->c_iType;
 	}
 }

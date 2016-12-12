@@ -6,7 +6,7 @@
 namespace BLL {
 
 #pragma region Constructors
-	Figurine::Figurine() : c_iId(), c_sName(""), c_type(0)
+	Figurine::Figurine()// : c_iId(), c_sName(""), c_type(0)
 	{	
 		MYSQL test;
 		DAL::Data dt;
@@ -75,4 +75,8 @@ namespace BLL {
 		return *c_type;
 	}
 #pragma endregion
+
+	void Figurine::setName(std::string p_sName) {
+		c_sName = p_sName;
+	}
 }

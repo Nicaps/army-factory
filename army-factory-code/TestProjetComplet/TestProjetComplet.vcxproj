@@ -183,7 +183,6 @@
     <ClCompile Include="AddFigurine.cpp" />
     <ClCompile Include="AddUnit.cpp" />
     <ClCompile Include="Army.cpp" />
-    <ClCompile Include="bdd.cpp" />
     <ClCompile Include="Connexion.cpp" />
     <ClCompile Include="CreateArmy.cpp" />
     <ClCompile Include="DAL.cpp" />
@@ -222,7 +221,6 @@
     <ClInclude Include="Army.h" />
     <!--<<<<<< HEAD-->
     <!--=======-->
-    <ClInclude Include="bdd.h" />
     <ClInclude Include="BLL.h" />
     <!-->>>>>>> 953f28998dabff13677bcc57406a8a2a044f6484-->
     <ClInclude Include="Connexion.h" />

@@ -4,6 +4,7 @@
 
 #include <string>
 #include "DAL.h"
+//#include "Figurine.h"
 
 namespace BLL {
 	public ref class Connexion {
@@ -14,9 +15,11 @@ namespace BLL {
 		bool isConnected();
 		DAL::Data* getDataBase();
 		std::string getName();
-		int getType();
+		int getTypeFig();
 	private:
 		DAL::Data *dt;
+		char* c_sName;
+		int c_iType;
 	};
 }
 

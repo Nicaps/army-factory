@@ -32,6 +32,7 @@ namespace BLL {
 		void delRule(Rule* p_ruleToDel);
 		int getId() const;
 		std::string getName() const;
+		void setName(std::string p_sName);
 		Type getType() const;
 		void showEquipments() const;
 		void showRules() const;

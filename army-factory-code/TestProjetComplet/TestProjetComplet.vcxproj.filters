@@ -25,7 +25,6 @@
     <ClCompile Include="ViewArmy.cpp" />
     <ClCompile Include="ViewFigurine.cpp" />
     <ClCompile Include="WarHammer 40K Army Factory.cpp" />
-    <ClCompile Include="bdd.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="About.h" />
@@ -54,7 +53,6 @@
     <ClInclude Include="ViewArmy.h" />
     <ClInclude Include="ViewFigurine.h" />
     <ClInclude Include="WarHammer 40K Army Factory.h" />
-    <ClInclude Include="bdd.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="img\wh40k.png" />
