@@ -17,6 +17,7 @@ namespace DAL {
 		void endConnection();
 		bool isConnected();
 		MYSQL* getMysql() const;
+		MYSQL getData();
 
 	private:
 		MYSQL *c_mysql;

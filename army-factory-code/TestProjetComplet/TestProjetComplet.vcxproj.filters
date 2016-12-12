@@ -12,7 +12,6 @@
     <ClCompile Include="DAL.cpp" />
     <ClCompile Include="Equipment.cpp" />
     <ClCompile Include="Figurine.cpp" />
-    <ClCompile Include="FigurineDAL.cpp" />
     <ClCompile Include="HomePage.cpp" />
     <ClCompile Include="Option.cpp" />
     <ClCompile Include="Role.cpp" />
@@ -34,12 +33,12 @@
     <ClInclude Include="AddFigurine.h" />
     <ClInclude Include="AddUnit.h" />
     <ClInclude Include="Army.h" />
+    <ClInclude Include="BLL.h" />
     <ClInclude Include="Connexion.h" />
     <ClInclude Include="CreateArmy.h" />
     <ClInclude Include="DAL.h" />
     <ClInclude Include="Equipment.h" />
     <ClInclude Include="Figurine.h" />
-    <ClInclude Include="FigurineDAL.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="HomePage.h" />
     <ClInclude Include="Option.h" />
@@ -54,7 +53,6 @@
     <ClInclude Include="ViewArmy.h" />
     <ClInclude Include="ViewFigurine.h" />
     <ClInclude Include="WarHammer 40K Army Factory.h" />
-    <ClInclude Include="BLL.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="img\wh40k.png" />

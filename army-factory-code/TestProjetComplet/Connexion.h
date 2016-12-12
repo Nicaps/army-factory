@@ -3,8 +3,8 @@
 #define DEF_CONNEXION
 
 #include <string>
-#include "DAL.h"
 #include "BLL.h"
+#include "DAL.h"
 
 namespace Connexion {
 	public ref class Connexion {
@@ -15,9 +15,13 @@ namespace Connexion {
 		static DAL::Data* getDataBase();
 		static void selectBaseFigs();
 		static void selectBaseUnits();
+		std::string getName();
+		int getTypeFig();
 
 	private:
 		static DAL::Data *dt;
+		char* c_sName;
+		int c_iType;
 	};
 }
 

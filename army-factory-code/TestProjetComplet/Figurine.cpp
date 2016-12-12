@@ -1,13 +1,10 @@
 #include "Figurine.h"
 
-//using namespace DAL;
-
 namespace BLL {
 
 #pragma region Constructors
-	Figurine::Figurine() : c_iId(), c_sName(""), c_type(0)
+	Figurine::Figurine()// : c_iId(), c_sName(""), c_type(0)
 	{	
-		c_sName = "SELECT name FROM figurines";
 		/*std::stringstream sstm;
 		sstm << "figurine:" << c_iId;
 		c_sName = sstm.str();*/
@@ -68,4 +65,8 @@ namespace BLL {
 		return *c_type;
 	}
 #pragma endregion
+
+	void Figurine::setName(std::string p_sName) {
+		c_sName = p_sName;
+	}
 }

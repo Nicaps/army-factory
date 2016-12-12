@@ -282,7 +282,7 @@ namespace Interface {
 		VarS.clear();
 		VarS = msclr::interop::marshal_as<std::string>(this->TBNameUnit->ToString());
 		Unite.setName(VarS);
-
+		printf(VarS.c_str());
 		String^ SvaR = gcnew String(Unite.getName().c_str());
 
 		//TBNumPoint->Text = TBNumPoint->Text + "ok" + SvaR;//gcnew String(Unite.getName().c_str());

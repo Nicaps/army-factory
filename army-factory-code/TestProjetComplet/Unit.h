@@ -39,5 +39,5 @@ namespace BLL {
 		Role c_Role;
 		std::vector < Figurine* > c_ListFig;
 	};
-#endif // !DEF_UNIT
 }
+#endif // !DEF_UNIT

@@ -1,4 +1,5 @@
 #include "Role.h"
+
 namespace BLL {
 #pragma region Constructors
 	Role::Role() {}

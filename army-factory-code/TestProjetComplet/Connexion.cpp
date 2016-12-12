@@ -45,4 +45,12 @@ namespace Connexion {
 		mysql_query(dt->getMysql(), query);
 		MYSQL_RES *result = mysql_use_result(dt->getMysql());
 	}
+
+	std::string Connexion::getName() {
+		return this->c_sName;
+	}
+
+	int Connexion::getTypeFig() {
+		return this->c_iType;
+	}
 }

@@ -14,14 +14,13 @@
 #include <iostream>
 
 //Custom includes
-#include "DAL.h"
 #include "Equipment.h"
 #include "Type.h"
 #include "Rule.h"
 
 namespace BLL {
 	//Class definition
-	class Figurine {
+	public class Figurine {
 	public:
 		Figurine();
 		~Figurine();
@@ -31,6 +30,7 @@ namespace BLL {
 		void delRule(Rule* p_ruleToDel);
 		int getId() const;
 		std::string getName() const;
+		void setName(std::string p_sName);
 		Type getType() const;
 		void showEquipments() const;
 		void showRules() const;
@@ -42,5 +42,5 @@ namespace BLL {
 		std::vector<Equipment*> c_listEquipment;
 		std::vector<Rule*> c_listRule;
 	};
-#endif // !DEF_FIGURINE
 }
+#endif // !DEF_FIGURINE

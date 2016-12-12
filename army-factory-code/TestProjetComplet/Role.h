@@ -23,5 +23,5 @@ namespace BLL {
 		std::string c_sRoleName;
 
 	};
-#endif // !DEF_ROLE
 }
+#endif // !DEF_ROLE
