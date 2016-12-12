@@ -14,6 +14,7 @@
 #include <iostream>
 
 //Custom includes
+#include "DAL.h"
 #include "Equipment.h"
 #include "Type.h"
 #include "Rule.h"
@@ -35,7 +36,6 @@ namespace BLL {
 		void showRules() const;
 
 	protected:
-		static int NEXT_VALID_ID;
 		int c_iId;
 		std::string c_sName;
 		Type* c_type;

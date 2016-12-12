@@ -1,14 +1,16 @@
 #include "Figurine.h"
+
+//using namespace DAL;
+
 namespace BLL {
-	int Figurine::NEXT_VALID_ID = 0;
 
 #pragma region Constructors
-	Figurine::Figurine() : c_iId(NEXT_VALID_ID), c_sName(""), c_type(0)
-	{
-		++NEXT_VALID_ID;
-		std::stringstream sstm;
+	Figurine::Figurine() : c_iId(), c_sName(""), c_type(0)
+	{	
+		c_sName = "SELECT name FROM figurines";
+		/*std::stringstream sstm;
 		sstm << "figurine:" << c_iId;
-		c_sName = sstm.str();
+		c_sName = sstm.str();*/
 	}
 
 	Figurine::~Figurine() {}
