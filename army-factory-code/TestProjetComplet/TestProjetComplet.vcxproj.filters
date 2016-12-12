@@ -163,6 +163,9 @@
     <EmbeddedResource Include="HomePage.resx">
       <Filter>Fichiers de ressources</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="WarHammer 40K Army Factory.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Image Include="img\wh40k.png">
