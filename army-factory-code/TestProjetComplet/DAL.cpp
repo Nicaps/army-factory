@@ -29,4 +29,8 @@ namespace DAL {
 	{
 		return c_bIsConnected;
 	}
+
+	MYSQL Data::getData() {
+		return *c_mysql;
+	}
 }

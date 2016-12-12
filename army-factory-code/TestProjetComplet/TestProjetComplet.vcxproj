@@ -96,11 +96,11 @@
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
-<!--<<<<<< HEAD-->
+      <!--<<<<<< HEAD-->
       <AdditionalDependencies>../mysql/lib/libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
-<!--=======-->
+      <!--=======-->
       <AdditionalDependencies>../mysql/lib/libmysql.lib</AdditionalDependencies>
-<!-->>>>>>> 3aaea0cbecf824d743c8bacd6f4100307f6980c4-->
+      <!-->>>>>>> 3aaea0cbecf824d743c8bacd6f4100307f6980c4-->
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <!--<<<<<< HEAD-->
@@ -183,6 +183,7 @@
     <ClCompile Include="AddFigurine.cpp" />
     <ClCompile Include="AddUnit.cpp" />
     <ClCompile Include="Army.cpp" />
+    <ClCompile Include="Connexion.cpp" />
     <ClCompile Include="CreateArmy.cpp" />
     <ClCompile Include="DAL.cpp" />
     <ClCompile Include="Equipment.cpp" />
@@ -219,6 +220,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Army.h" />
+    <ClInclude Include="Connexion.h" />
     <ClInclude Include="CreateArmy.h">
       <FileType>CppControl</FileType>
     </ClInclude>

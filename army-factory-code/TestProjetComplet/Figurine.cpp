@@ -1,4 +1,5 @@
 #include "Figurine.h"
+#include <mysql.h>
 
 //using namespace DAL;
 
@@ -7,7 +8,13 @@ namespace BLL {
 #pragma region Constructors
 	Figurine::Figurine() : c_iId(), c_sName(""), c_type(0)
 	{	
-		c_sName = "SELECT name FROM figurines";
+		MYSQL test;
+		DAL::Data dt;
+		test = dt.getData();
+		//test = DAL::Data::getData();// = mysql_init(NULL);//DAL::Data::getData();//(&mysql, "SELECT name FROM figurines");
+		mysql_init(&test);
+		mysql_query(&test, "SELECT name FROM figurines");
+		//c_sName = "SELECT name FROM figurines";
 		/*std::stringstream sstm;
 		sstm << "figurine:" << c_iId;
 		c_sName = sstm.str();*/
