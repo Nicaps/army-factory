@@ -2,9 +2,9 @@
 #ifndef DEF_BLL
 #define DEF_BLL
 
-#include "Connexion.h"
+//#include "Connexion.h"
 //#include "Army.h"
-//#include "Unit.h"
+#include "Unit.h"
 //#include "Figurine.h"
 //#include "Equipment.h"
 //#include "Option.h"

@@ -16,6 +16,7 @@ namespace DAL {
 		void connection(const char *p_sHostname, const char *p_sUser, const char *p_sPsswd, const char *p_sDbName);
 		void endConnection();
 		bool isConnected();
+		MYSQL* getMysql() const;
 
 	private:
 		MYSQL *c_mysql;

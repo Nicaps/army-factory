@@ -11,8 +11,8 @@ void Main(array<String^>^args) {
 
 	Interface::WarHammer40KArmyFactory WH40K;
 
-	if (WH40K.getConnexion()->isConnected()) {
+	if (Connexion::Connexion::isConnected()) {
 		Application::Run(%WH40K);
-		WH40K.getConnexion()->disconnect();
+		Connexion::Connexion::disconnect();
 	}
 }

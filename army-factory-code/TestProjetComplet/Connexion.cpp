@@ -1,8 +1,9 @@
 #include "Connexion.h"
 
-namespace BLL {
-	BLL::Connexion::Connexion()
+namespace Connexion {
+	void Connexion::connect()
 	{
+		//throw gcnew System::NotImplementedException();
 		dt = new DAL::Data();
 		dt->connection("127.0.0.1", "ArmyFactory", "armyfactory", "test_army_factory");
 		if (dt->isConnected()) {
@@ -12,27 +13,36 @@ namespace BLL {
 			printf("Échec de connexion.\n");
 		}
 	}
-
-	BLL::Connexion::~Connexion()
+	void Connexion::disconnect()
 	{
-		disconnect();
+		//throw gcnew System::NotImplementedException();
+		dt->endConnection();
 		delete dt;
 	}
 
-	void BLL::Connexion::disconnect()
-	{
-		if (dt->isConnected()) {
-			dt->endConnection();
-		}
-	}
-
-	bool BLL::Connexion::isConnected()
+	bool Connexion::isConnected()
 	{
 		return dt->isConnected();
 	}
 
-	DAL::Data * BLL::Connexion::getDataBase()
+	DAL::Data * Connexion::getDataBase()
 	{
 		return dt;
+	}
+
+	void Connexion::selectBaseFigs()
+	{
+		//throw gcnew System::NotImplementedException();
+		const char* query("SELECT * FROM figurines;");
+		mysql_query(dt->getMysql(), query);
+		MYSQL_RES *result = mysql_use_result(dt->getMysql());
+	}
+
+	void Connexion::selectBaseUnits()
+	{
+		//throw gcnew System::NotImplementedException();
+		const char* query("SELECT * FROM unit WHERE isBase = 1;");
+		mysql_query(dt->getMysql(), query);
+		MYSQL_RES *result = mysql_use_result(dt->getMysql());
 	}
 }

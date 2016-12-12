@@ -4,17 +4,20 @@
 
 #include <string>
 #include "DAL.h"
+#include "BLL.h"
 
-namespace BLL {
+namespace Connexion {
 	public ref class Connexion {
 	public:
-		Connexion();
-		~Connexion();
-		void disconnect();
-		bool isConnected();
-		DAL::Data* getDataBase();
+		static void connect();
+		static void disconnect();
+		static bool isConnected();
+		static DAL::Data* getDataBase();
+		static void selectBaseFigs();
+		static void selectBaseUnits();
+
 	private:
-		DAL::Data *dt;
+		static DAL::Data *dt;
 	};
 }
 
