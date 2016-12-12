@@ -6,13 +6,13 @@
 #include "DAL.h"
 
 namespace BLL {
-	public class Connexion {
+	public ref class Connexion {
 	public:
 		Connexion();
 		~Connexion();
 		void disconnect();
-		bool isConnected() const;
-		DAL::Data* getDataBase() const;
+		bool isConnected();
+		DAL::Data* getDataBase();
 	private:
 		DAL::Data *dt;
 	};

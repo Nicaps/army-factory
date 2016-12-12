@@ -96,7 +96,11 @@
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
+      <!--<<<<<< HEAD-->
+      <AdditionalDependencies>../mysql/lib/libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <!--=======-->
       <AdditionalDependencies>../mysql/lib/libmysql.lib</AdditionalDependencies>
+      <!-->>>>>>> 3aaea0cbecf824d743c8bacd6f4100307f6980c4-->
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <!--<<<<<< HEAD-->
@@ -184,6 +188,7 @@
     <ClCompile Include="DAL.cpp" />
     <ClCompile Include="Equipment.cpp" />
     <ClCompile Include="Figurine.cpp" />
+    <ClCompile Include="FigurineDAL.cpp" />
     <ClCompile Include="HomePage.cpp" />
     <ClCompile Include="Option.cpp" />
     <ClCompile Include="Role.cpp" />
@@ -215,6 +220,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Army.h" />
+    <ClInclude Include="BLL.h" />
     <ClInclude Include="Connexion.h" />
     <ClInclude Include="CreateArmy.h">
       <FileType>CppControl</FileType>
@@ -222,6 +228,7 @@
     <ClInclude Include="DAL.h" />
     <ClInclude Include="Equipment.h" />
     <ClInclude Include="Figurine.h" />
+    <ClInclude Include="FigurineDAL.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="HomePage.h">
       <FileType>CppControl</FileType>

@@ -94,10 +94,9 @@ namespace Interface {
 
 		}
 #pragma endregion
-	private: System::Void BtnClose_Click(System::Object^  sender, System::EventArgs^  e) {
-		this->Close();
-	}
+
 	private: System::Void BtnOk_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Close();
 	}
 	};
 }

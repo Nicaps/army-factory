@@ -38,6 +38,7 @@ namespace BLL {
 	}
 
 	std::string Unit::getName() {
+		std::cout << c_sName << std::endl;
 		return c_sName;
 	}
 
@@ -49,6 +50,7 @@ namespace BLL {
 #pragma region Mutator
 	void Unit::setName(std::string p_sName) {
 		c_sName = p_sName;
+		std::cout << c_sName << std::endl;
 	}
 #pragma endregion
 }

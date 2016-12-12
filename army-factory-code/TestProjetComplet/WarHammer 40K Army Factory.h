@@ -1,9 +1,10 @@
-#include "DAL.h"
+#include "BLL.h"
 #include "AboutUs.h"
 #include "About.h"
 #include "HomePage.h"
 #include "ViewArmy.h"
 #include "ViewFigurine.h"
+//#include "Connexion.h"
 
 namespace Interface {
 	using namespace System;
@@ -20,6 +21,7 @@ namespace Interface {
 	{
 	private:
 
+		BLL::Connexion ^connexion;
 		System::ComponentModel::IContainer^ components;
 		Interface::HomePage^ Home;
 		Interface::CreateArmy^ NewArmy;
@@ -33,11 +35,14 @@ namespace Interface {
 			//
 			//TODO: Add the constructor code here
 			//
-
+			connexion = gcnew BLL::Connexion();
 			Home = gcnew Interface::HomePage;
 			PanelWH40K->Controls->Add(Home);
 		}
 
+		BLL::Connexion ^getConnexion() {
+			return connexion;
+		}
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.

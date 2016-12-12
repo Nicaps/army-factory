@@ -6,15 +6,13 @@ using namespace System::Windows::Forms;
 
 [STAThread]
 void Main(array<String^>^args) {
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
 
-	DAL::Data *dt = new DAL::Data();
-	dt->connection("127.0.0.1", "ArmyFactory", "armyfactory", "test_army_factory");
-	if (dt->isConnected()) {
-		Application::EnableVisualStyles();
-		Application::SetCompatibleTextRenderingDefault(false);
+	Interface::WarHammer40KArmyFactory WH40K;
 
-		Interface::WarHammer40KArmyFactory WH40K;
+	if (WH40K.getConnexion()->isConnected()) {
 		Application::Run(%WH40K);
-		dt->endConnection();
+		WH40K.getConnexion()->disconnect();
 	}
 }
