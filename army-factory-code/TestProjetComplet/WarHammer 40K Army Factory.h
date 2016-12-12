@@ -1,4 +1,4 @@
-//#include "DAL.h"
+#include "DAL.h"
 #include "AboutUs.h"
 #include "About.h"
 #include "HomePage.h"
@@ -24,8 +24,8 @@ namespace Interface {
 		Interface::HomePage^ Home;
 		Interface::CreateArmy^ NewArmy;
 		Interface::ViewArmy^ VisuArmy;
+		Interface::ViewFigurine^ VisuFig;
 
-			 Interface::ViewFigurine^ VisuFig;
 	public:
 		WarHammer40KArmyFactory(void)
 		{

@@ -96,7 +96,11 @@
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
+<!--<<<<<< HEAD-->
       <AdditionalDependencies>../mysql/lib/libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+<!--=======-->
+      <AdditionalDependencies>../mysql/lib/libmysql.lib</AdditionalDependencies>
+<!-->>>>>>> 3aaea0cbecf824d743c8bacd6f4100307f6980c4-->
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <!--<<<<<< HEAD-->
@@ -120,7 +124,7 @@
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../mysql/lib/libmysql.lib</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <!--<<<<<< HEAD-->
@@ -141,7 +145,7 @@
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../mysql/lib/libmysql.lib</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <!--<<<<<< HEAD-->
@@ -162,7 +166,7 @@
       <!-->>>>>>> 4c103def9c54c58b98dc10740d82b8885bbcb068-->
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../mysql/lib/libmysql.lib</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <!--<<<<<< HEAD-->
