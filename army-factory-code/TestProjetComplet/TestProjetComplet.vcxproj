@@ -179,6 +179,7 @@
     <ClCompile Include="AddFigurine.cpp" />
     <ClCompile Include="AddUnit.cpp" />
     <ClCompile Include="Army.cpp" />
+    <ClCompile Include="Connexion.cpp" />
     <ClCompile Include="CreateArmy.cpp" />
     <ClCompile Include="DAL.cpp" />
     <ClCompile Include="Equipment.cpp" />
@@ -214,6 +215,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Army.h" />
+    <ClInclude Include="Connexion.h" />
     <ClInclude Include="CreateArmy.h">
       <FileType>CppControl</FileType>
     </ClInclude>
