@@ -150,11 +150,19 @@ namespace Interface {
 			// 
 			this->CBModelUnit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11));
 			this->CBModelUnit->FormattingEnabled = true;
-			this->CBModelUnit->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Unité1", L"Unité2" });
+			//this->CBModelUnit->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Unité1", L"Unité2" });
 			this->CBModelUnit->Location = System::Drawing::Point(186, 138);
 			this->CBModelUnit->Name = L"CBModelUnit";
 			this->CBModelUnit->Size = System::Drawing::Size(121, 26);
 			this->CBModelUnit->TabIndex = 7;
+			
+			BLL::Unit unite;
+			System::Object^ obj;
+			//obj = msclr::interop::marshal_as<System::Object^>(
+			//obj = gcnew cli::array<System::Object^>;
+			obj = msclr::interop::marshal_as<System::Object^>(unite.getName());
+			this->CBModelUnit->Items->AddRange(gcnew cli::array<System::Object^> {obj});
+
 			// 
 			// TBNumPoint
 			// 
