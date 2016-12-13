@@ -14,7 +14,7 @@ namespace Connexion {
 		static bool isConnected();
 		static DAL::Data* getDataBase();
 		static void selectBaseFigs();
-		static void selectBaseUnits();
+		static std::vector<BLL::Unit *> selectBaseUnits();
 		std::string getName();
 		int getTypeFig();
 

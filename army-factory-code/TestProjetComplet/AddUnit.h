@@ -1,5 +1,7 @@
+#include <msclr\marshal.h>
 #include <msclr\marshal_cppstd.h>
-#include "Unit.h"
+#include "Connexion.h"
+//#include "Unit.h"
 #include "AddFigurine.h"
 #include "AddEquipment.h"
 #include "SaveUnit.h"
@@ -151,6 +153,21 @@ namespace Interface {
 			this->CBModelUnit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11));
 			this->CBModelUnit->FormattingEnabled = true;
 			this->CBModelUnit->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Unité1", L"Unité2" });
+			///TODO
+
+			//this->CBModelUnit->Items->AddRange(Connexion::Connexion::selectBaseUnits());
+
+			//std::vector<BLL::Unit *> units = Connexion::Connexion::selectBaseUnits();
+			//array<System::Object ^> ^arr = gcnew cli::array< System::Object^  >(units.size()) {};
+			//System::Object ^obj;
+			//for (auto &un : units) {
+				//obj = static_cast<System::Object^>(un->getName().c_str());
+				//obj = (System::Object^)msclr::marshal::PtrToStructure(un, obj);
+				//this->CBModelUnit->Items->Add(gcnew System::Object()^ {un});
+				//obj = msclr::interop::marshal_as<System::Object^>(un->getName());
+				//arr->Add(obj);
+			//}
+
 			this->CBModelUnit->Location = System::Drawing::Point(186, 138);
 			this->CBModelUnit->Name = L"CBModelUnit";
 			this->CBModelUnit->Size = System::Drawing::Size(121, 26);
@@ -294,4 +311,5 @@ namespace Interface {
 		f->Show();
 	}
 	};
+
 }

@@ -38,12 +38,25 @@ namespace Connexion {
 		MYSQL_RES *result = mysql_use_result(dt->getMysql());
 	}
 
-	void Connexion::selectBaseUnits()
+	std::vector<BLL::Unit *> Connexion::selectBaseUnits()
 	{
 		//throw gcnew System::NotImplementedException();
 		const char* query("SELECT * FROM unit WHERE isBase = 1;");
 		mysql_query(dt->getMysql(), query);
+
 		MYSQL_RES *result = mysql_use_result(dt->getMysql());
+		MYSQL_ROW row;
+		const int num_row(mysql_num_rows(result));
+		std::vector<BLL::Unit *> units;
+		BLL::Unit *unit;
+
+		while (row = mysql_fetch_row(result)) {
+			unit = new BLL::Unit();
+			unit->setName(row[3]);
+			units.push_back(unit);
+		}
+
+		return units;
 	}
 
 	std::string Connexion::getName() {
